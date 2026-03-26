@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Dinocraft</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: #0a0f0a;
+  color: #e4f5e4;
+  font-family: 'Press Start 2P', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 24px;
+}
+.dino { font-size: 4rem; margin-bottom: 24px; animation: bounce 1s ease-in-out infinite; }
+@keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+h1 { font-size: clamp(1.5rem, 6vw, 3rem); color: #4ade80; margin-bottom: 16px; text-shadow: 4px 4px 0 #15803d; }
+p { font-size: 0.7rem; color: #6b8f6b; margin-bottom: 32px; line-height: 2; }
+a {
+  font-size: 0.65rem;
+  padding: 12px 24px;
+  background: #15803d;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #22c55e;
+  box-shadow: 4px 4px 0 #000;
+  transition: all 0.1s;
+}
+a:hover { background: #22c55e; color: #000; transform: translate(-2px,-2px); box-shadow: 6px 6px 0 #000; }
+</style>
+</head>
+<body>
+  <div class="dino">🦖</div>
+  <h1>404</h1>
+  <p>YOU DUG TOO DEEP.<br>THIS BLOCK DOESN'T EXIST.</p>
+  <a href="/">← BACK TO SURFACE</a>
+</body>
+</html>
